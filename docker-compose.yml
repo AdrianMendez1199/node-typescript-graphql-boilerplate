@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  node_boilerplate:
+    volumes:
+     - .:/usr/src/app
+    build: .
+    container_name: node_boilerplate
+    image: amendez/node_boilerplate
+    ports:
+      - "4000:4000"
