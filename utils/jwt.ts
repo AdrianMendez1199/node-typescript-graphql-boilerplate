@@ -1,5 +1,6 @@
 import jwt from 'jsonwebtoken';
 import 'dotenv/config';
+import { AuthenticationError } from 'apollo-server';
 
 
 /**
@@ -20,5 +21,9 @@ export function getToken(info: any): string {
 
 /* eslint-disable @typescript-eslint/ban-types */
 export function decodeToken(token: string): string | object {
-  return jwt.verify(token, process.env.JWT_SECRET || '');
+  try {
+    return jwt.verify(token, process.env.JWT_SECRET || '');
+  } catch (e) {
+    throw new AuthenticationError('Unauthenticated');
+  }
 }
