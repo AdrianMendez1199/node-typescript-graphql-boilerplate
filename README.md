@@ -1,1 +1,1 @@
-### Node Graphql Typescript Docker Boilerplate
+### Node Graphql Typescript Docker Typeorm Boilerplate
