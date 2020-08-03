@@ -80,6 +80,7 @@
     "_moduleAliases": {
         "@root": ".",
         "@api": "dist/src/api",
-        "@entity": "dist/entity"
+        "@entity": "dist/entity",
+        "@utils": "dist/utils"
     }
 }
