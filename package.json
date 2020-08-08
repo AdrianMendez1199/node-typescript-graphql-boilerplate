@@ -55,6 +55,7 @@
         "reflect-metadata": "^0.1.10"
     },
     "devDependencies": {
+        "@types/bcrypt": "^3.0.0",
         "@types/jest": "^26.0.7",
         "@types/jsonwebtoken": "^8.5.0",
         "@types/oracledb": "^5.0.0",
